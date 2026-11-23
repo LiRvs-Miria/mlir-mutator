@@ -18,6 +18,7 @@ configure_lit_site_cfg(
 
 set(MLIRMUTATOR_TEST_DEPENDS
   FileCheck
+  mutator-opt
   not
   )
 

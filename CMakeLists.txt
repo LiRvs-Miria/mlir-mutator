@@ -44,6 +44,8 @@ link_directories(${LLVM_BUILD_LIBRARY_DIR})
 add_definitions(${LLVM_DEFINITIONS})
 
 add_subdirectory(include)
+add_subdirectory(lib)
+add_subdirectory(mutator-opt)
 
 option(MLIRMUTATOR_INCLUDE_TESTS "Whether to build mlir-mutator tests" ON)
 if(MLIRMUTATOR_INCLUDE_TESTS)

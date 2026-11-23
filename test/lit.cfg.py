@@ -73,7 +73,7 @@ if "MLIR_OPT_CHECK_IR_ROUNDTRIP" in os.environ:
         ]
     )
 else:
-    tools.extend(["mlir-opt"])
+    tools.extend(["mlir-opt", "mutator-opt"])
 
 llvm_config.add_tool_substitutions(tools, tool_dirs)
 

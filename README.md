@@ -43,12 +43,20 @@ analysis, coverage analysis, result analysis, and report transforms.
 
 ## Building
 
-Requires an LLVM/MLIR build (or install) with MLIR enabled:
+Requires an LLVM/MLIR build (or install) with MLIR enabled, built with
+the same compiler and flags: the linked build here uses clang with
+`-fsanitize=fuzzer-no-link`, and its sanitizer-coverage runtime must be
+available at link time:
 
 ```sh
-cmake -S . -B build -DMLIR_BUILD_DIR=$HOME/mlir-fuzz-build
+cmake -S . -B build -DMLIR_BUILD_DIR=$HOME/mlir-fuzz-build \
+  -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
+  -DCMAKE_CXX_FLAGS=-fsanitize=fuzzer-no-link
 cmake --build build
 ```
+
+`mutator-opt` is the mutator driver: feed it MLIR, it prints mutated
+MLIR.
 
 ## Testing
 

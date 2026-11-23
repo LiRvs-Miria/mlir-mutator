@@ -23,6 +23,12 @@ def Seed_Dialect : Dialect {
         structure, not byte shoveling.
     }];
     let cppNamespace = "::mlir::mutator";
+
+    let useDefaultTypePrinterParser = 1;
+
+    let extraClassDeclaration = [{
+        void registerTypes();
+    }];
 }
 
 #endif // SEED_DIALECT
