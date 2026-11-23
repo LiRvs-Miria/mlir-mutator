@@ -50,7 +50,18 @@ cmake -S . -B build -DMLIR_BUILD_DIR=$HOME/mlir-fuzz-build
 cmake --build build
 ```
 
-No targets yet.
+## Testing
+
+Lit + FileCheck based, following MLIR conventions. The test suite
+requires the tools (`mlir-opt`, `FileCheck`, ...) of the linked
+LLVM/MLIR build:
+
+```sh
+cmake --build build --target check-mlir-mutator
+```
+
+Currently the suite runs the in-tree mlir-opt-fuzzer cases, the
+designated consumer of this project.
 
 ## License
 
