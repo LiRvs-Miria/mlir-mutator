@@ -34,6 +34,15 @@ The working direction was announced in the
   in-tree piece stays deliberately thin.
 - Further consumers (e.g. dbgfuzz) integrate via dedicated adapters.
 
+## Campaign reporting
+
+Templates for the upstream reporting workflow that consumes campaign
+output (the `fuzzing-campaign` ledger model):
+
+- `docs/templates/campaign-meta-issue.md` — the campaign thread skeleton
+  (adopted from the
+  [reporting-advice thread](https://discourse.llvm.org/t/seeking-advice-on-reporting-100-mlir-bugs-found-by-an-automated-testing-tool/92920/18))
+
 ## Status
 
 Scaffolding stage. The design contract is written before any
