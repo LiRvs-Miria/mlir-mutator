@@ -19,7 +19,7 @@ The working direction was announced in the
   - `report` — campaign results as IR
 - **Five pass families** on top of them:
   - mutation transforms — bitflip / arith / splice / havoc over seed IR
-  - mutation analysis — picks the next round's strategy from feedback, as an
+  - strategy analysis — picks the next round's strategy from feedback, as an
     MLIR analysis with caching and invalidation
   - coverage analysis — bitmap/graph annotation, novelty signals
   - result analysis — findings and crash classification
