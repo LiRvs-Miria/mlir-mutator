@@ -54,13 +54,15 @@ analysis, coverage analysis, result analysis, and report transforms.
 
 Requires an LLVM/MLIR build (or install) with MLIR enabled, built with
 the same compiler and flags: the linked build here uses clang with
-`-fsanitize=fuzzer-no-link`, and its sanitizer-coverage runtime must be
-available at link time:
+`-fsanitize=address,fuzzer-no-link`, and the corresponding sanitizer
+runtimes must be available at link time. Flag mismatches surface as
+undefined `__asan_*` symbols when linking executables.
 
 ```sh
 cmake -S . -B build -DMLIR_BUILD_DIR=$HOME/mlir-fuzz-build \
   -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
-  -DCMAKE_CXX_FLAGS=-fsanitize=fuzzer-no-link
+  -DCMAKE_C_FLAGS="-fsanitize=address,fuzzer-no-link" \
+  -DCMAKE_CXX_FLAGS="-fsanitize=address,fuzzer-no-link"
 cmake --build build
 ```
 
