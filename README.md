@@ -15,7 +15,7 @@ The working direction was announced in the
 - **Everything is IR.** Three product dialects:
   - `seed` — inputs as IR; mutation is pass work over typed structure, not
     byte shoveling
-  - `corpus` — corpus state and selection metadata as IR
+  - `population` — population state and selection metadata as IR
   - `report` — campaign results as IR
 - **Five pass families** on top of them:
   - mutation transforms — bitflip / arith / splice / havoc over seed IR
@@ -47,7 +47,7 @@ output (the `fuzzing-campaign` ledger model):
 
 Scaffolding stage. The design contract is written before any
 implementation; the first slice is minimal shapes of the `seed`,
-`corpus` and `report` dialects plus minimal mutation transforms, mutation
+`population` and `report` dialects plus minimal mutation transforms, mutation
 analysis, coverage analysis, result analysis, and report transforms.
 
 ## Building

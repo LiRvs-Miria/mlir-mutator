@@ -1,4 +1,4 @@
-//===- CorpusOps.td - Corpus dialect ops -------------------*- tablegen -*-===//
+//===- PopulationOps.td - Population dialect ops -------------------*- tablegen -*-===//
 //
 // This file is licensed under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,16 +6,16 @@
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef CORPUS_OPS
-#define CORPUS_OPS
+#ifndef POPULATION_OPS
+#define POPULATION_OPS
 
-include "Dialect/Corpus/CorpusDialect.td"
+include "Dialect/Population/PopulationDialect.td"
 
 //===----------------------------------------------------------------------===//
-// Base corpus operation definition.
+// Base population operation definition.
 //===----------------------------------------------------------------------===//
 
-class Corpus_Op<string mnemonic, list<Trait> traits = []> :
-        Op<Corpus_Dialect, mnemonic, traits>;
+class Population_Op<string mnemonic, list<Trait> traits = []> :
+        Op<Population_Dialect, mnemonic, traits>;
 
-#endif // CORPUS_OPS
+#endif // POPULATION_OPS

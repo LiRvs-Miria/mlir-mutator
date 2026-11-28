@@ -1,4 +1,4 @@
-//===- CorpusDialect.td - Corpus dialect -------------------*- tablegen -*-===//
+//===- PopulationDialect.td - Population dialect -------------------*- tablegen -*-===//
 //
 // This file is licensed under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,22 +6,22 @@
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef CORPUS_DIALECT
-#define CORPUS_DIALECT
+#ifndef POPULATION_DIALECT
+#define POPULATION_DIALECT
 
 include "mlir/IR/OpBase.td"
 
 //===----------------------------------------------------------------------===//
-// Corpus dialect definition.
+// Population dialect definition.
 //===----------------------------------------------------------------------===//
 
-def Corpus_Dialect : Dialect {
-    let name = "corpus";
-    let summary = "A fuzzing corpus dialect.";
+def Population_Dialect : Dialect {
+    let name = "population";
+    let summary = "A fuzzing population dialect.";
     let description = [{
-        Corpus state and selection metadata represented as IR.
+        Population state and selection metadata represented as IR.
     }];
     let cppNamespace = "::mlir::mutator";
 }
 
-#endif // CORPUS_DIALECT
+#endif // POPULATION_DIALECT
