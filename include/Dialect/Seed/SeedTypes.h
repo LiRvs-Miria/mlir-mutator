@@ -13,6 +13,6 @@
 #include "mlir/IR/BuiltinTypes.h"
 
 #define GET_TYPEDEF_CLASSES
-#include "Mutator/Seed/SeedOpsTypes.h.inc"
+#include "Dialect/Seed/SeedOpsTypes.h.inc"
 
 #endif // MUTATOR_SEEDTYPES_H

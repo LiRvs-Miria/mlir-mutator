@@ -10,7 +10,7 @@
 #define SEED_TYPES
 
 include "mlir/IR/AttrTypeBase.td"
-include "Mutator/Seed/SeedDialect.td"
+include "Dialect/Seed/SeedDialect.td"
 
 //===----------------------------------------------------------------------===//
 // Seed type definitions

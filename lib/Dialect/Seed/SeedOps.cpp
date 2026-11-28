@@ -6,7 +6,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "Mutator/Seed/SeedOps.h"
+#include "Dialect/Seed/SeedOps.h"
 
 #include "mlir/IR/SymbolTable.h"
 #include "mlir/IR/RegionKindInterface.h"
@@ -16,7 +16,7 @@
 using namespace mlir::mutator;
 
 #define GET_OP_CLASSES
-#include "Mutator/Seed/SeedOps.cpp.inc"
+#include "Dialect/Seed/SeedOps.cpp.inc"
 
 //===----------------------------------------------------------------------===//
 // Seed ops.

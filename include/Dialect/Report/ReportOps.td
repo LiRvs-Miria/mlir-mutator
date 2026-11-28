@@ -9,7 +9,7 @@
 #ifndef REPORT_OPS
 #define REPORT_OPS
 
-include "Mutator/Report/ReportDialect.td"
+include "Dialect/Report/ReportDialect.td"
 
 //===----------------------------------------------------------------------===//
 // Base report operation definition.

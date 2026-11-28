@@ -1,4 +1,4 @@
-//===- ReportDialect.h - Report dialect -----------------------*- C++ -*-===//
+//===- CorpusDialect.h - Corpus dialect -----------------------*- C++ -*-===//
 //
 // This file is licensed under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,11 +6,11 @@
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef MUTATOR_REPORTDIALECT_H
-#define MUTATOR_REPORTDIALECT_H
+#ifndef MUTATOR_CORPUSDIALECT_H
+#define MUTATOR_CORPUSDIALECT_H
 
 #include "mlir/IR/Dialect.h"
 
-#include "Mutator/Report/ReportOpsDialect.h.inc"
+#include "Dialect/Corpus/CorpusOpsDialect.h.inc"
 
-#endif // MUTATOR_REPORTDIALECT_H
+#endif // MUTATOR_CORPUSDIALECT_H

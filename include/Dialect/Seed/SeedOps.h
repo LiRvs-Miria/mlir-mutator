@@ -16,10 +16,10 @@
 #include "mlir/IR/OpDefinition.h"
 #include "mlir/Interfaces/SideEffectInterfaces.h"
 
-#include "Mutator/Seed/SeedDialect.h"
-#include "Mutator/Seed/SeedTypes.h"
+#include "Dialect/Seed/SeedDialect.h"
+#include "Dialect/Seed/SeedTypes.h"
 
 #define GET_OP_CLASSES
-#include "Mutator/Seed/SeedOps.h.inc"
+#include "Dialect/Seed/SeedOps.h.inc"
 
 #endif // MUTATOR_SEEDOPS_H

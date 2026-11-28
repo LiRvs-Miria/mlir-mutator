@@ -6,14 +6,14 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "Mutator/Seed/SeedDialect.h"
-#include "Mutator/Seed/SeedOps.h"
-#include "Mutator/Seed/SeedTypes.h"
+#include "Dialect/Seed/SeedDialect.h"
+#include "Dialect/Seed/SeedOps.h"
+#include "Dialect/Seed/SeedTypes.h"
 
 using namespace mlir;
 using namespace mlir::mutator;
 
-#include "Mutator/Seed/SeedOpsDialect.cpp.inc"
+#include "Dialect/Seed/SeedOpsDialect.cpp.inc"
 
 //===----------------------------------------------------------------------===//
 // Seed dialect.
@@ -22,7 +22,7 @@ using namespace mlir::mutator;
 void SeedDialect::initialize() {
   addOperations<
 #define GET_OP_LIST
-#include "Mutator/Seed/SeedOps.cpp.inc"
+#include "Dialect/Seed/SeedOps.cpp.inc"
       >();
   registerTypes();
 }

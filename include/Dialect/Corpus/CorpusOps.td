@@ -9,7 +9,7 @@
 #ifndef CORPUS_OPS
 #define CORPUS_OPS
 
-include "Mutator/Corpus/CorpusDialect.td"
+include "Dialect/Corpus/CorpusDialect.td"
 
 //===----------------------------------------------------------------------===//
 // Base corpus operation definition.

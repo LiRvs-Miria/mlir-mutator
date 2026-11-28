@@ -9,8 +9,8 @@
 #ifndef SEED_OPS
 #define SEED_OPS
 
-include "Mutator/Seed/SeedDialect.td"
-include "Mutator/Seed/SeedTypes.td"
+include "Dialect/Seed/SeedDialect.td"
+include "Dialect/Seed/SeedTypes.td"
 include "mlir/Interfaces/SideEffectInterfaces.td"
 
 //===----------------------------------------------------------------------===//

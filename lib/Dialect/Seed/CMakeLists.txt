@@ -4,7 +4,7 @@ add_mlir_dialect_library(MutatorSeedDialect
         SeedOps.cpp
 
         ADDITIONAL_HEADER_DIRS
-        ${MLIRMUTATOR_SOURCE_DIR}/include/Mutator
+        ${MLIRMUTATOR_SOURCE_DIR}/include/Dialect
 
         DEPENDS
         MLIRSeedOpsIncGen

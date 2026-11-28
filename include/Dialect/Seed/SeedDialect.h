@@ -11,6 +11,6 @@
 
 #include "mlir/IR/Dialect.h"
 
-#include "Mutator/Seed/SeedOpsDialect.h.inc"
+#include "Dialect/Seed/SeedOpsDialect.h.inc"
 
 #endif // MUTATOR_SEEDDIALECT_H

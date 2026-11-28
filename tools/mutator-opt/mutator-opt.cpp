@@ -6,7 +6,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "Mutator/Seed/SeedDialect.h"
+#include "Dialect/Seed/SeedDialect.h"
 
 #include "mlir/Dialect/Arith/IR/ArithDialect.h"
 #include "mlir/Dialect/Func/IR/FuncDialect.h"
